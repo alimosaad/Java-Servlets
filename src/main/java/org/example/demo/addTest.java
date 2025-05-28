@@ -12,11 +12,16 @@ import java.io.PrintWriter;
 
 @WebServlet(urlPatterns = {"/addTest"})
 public class addTest extends HttpServlet {
-    public void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-
+    public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        ProcessRequest(req,res);
+    }
+    public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+        doGet(req,res);
+    }
+    public  void ProcessRequest(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
         int i =Integer.parseInt(req.getParameter("num1"));
         int i2 =Integer.parseInt(req.getParameter("num2"));
-         int k=i+i2;
+        int k=i+i2;
         PrintWriter out = res.getWriter();
         out.println(k);
     }
