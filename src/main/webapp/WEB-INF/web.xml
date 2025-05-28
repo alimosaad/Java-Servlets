@@ -4,11 +4,11 @@
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
     <servlet>
-        <servlet-name>addTest</servlet-name>
-        <servlet-class>org.example.demo.addTest</servlet-class>
+        <servlet-name>VisitCounter</servlet-name>
+        <servlet-class>org.example.demo.VisitCounter\</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>addTest</servlet-name>
-        <url-pattern>/hello</url-pattern>
+        <servlet-name>VisitCounter</servlet-name>
+        <url-pattern>/Visit</url-pattern>
     </servlet-mapping>
 </web-app>
