@@ -5,7 +5,7 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<form action="addTest" method="get">
+<form action="addTest" method="post">
     Enter 1st Number:<input type="text" name="num1" />
     <br>Enter 2nd Number:<input type="text" name="num2" />
     <br>
