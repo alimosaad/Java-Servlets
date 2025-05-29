@@ -7,8 +7,24 @@
         <servlet-name>VisitCounter</servlet-name>
         <servlet-class>org.example.demo.VisitCounter\</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Welcome</servlet-name>
+        <servlet-class>org.example.demo.SimpleRequestDispatcher.Welcome</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SimpleReqDispatcher</servlet-name>
+        <servlet-class>org.example.demo.SimpleRequestDispatcher.SimpleReqDispatcher</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>VisitCounter</servlet-name>
         <url-pattern>/Visit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Welcome</servlet-name>
+        <url-pattern>/Welcome</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SimpleReqDispatcher</servlet-name>
+        <url-pattern>/SimpleReqDispatcher</url-pattern>
     </servlet-mapping>
 </web-app>
