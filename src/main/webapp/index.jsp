@@ -6,10 +6,8 @@
         <title>LoginPage</title>
     </head>
     <body>
-        <form action="SimpleReqDispatcher" method="post">
-            Name: <input type="text" name="UserName"/><br/>
-            Password:<input type="password" name="Password"/>
-            <input type="submit" value="Login"/>
+        <form action="ServletConfigContext" method="get">
+            <input type="submit" value="Submit"/>
         </form>
     </body>
 </html>

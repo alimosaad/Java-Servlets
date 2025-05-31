@@ -15,6 +15,14 @@
         <servlet-name>SimpleReqDispatcher</servlet-name>
         <servlet-class>org.example.demo.SimpleRequestDispatcher.SimpleReqDispatcher</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServletConfigContext</servlet-name>
+        <servlet-class>org.example.demo.ServletConfigAndContext.ServletConfigContext</servlet-class>
+    </servlet>
+    <context-param>
+        <param-name>adminEmail</param-name>
+        <param-value>alimosaad@gmail.com</param-value>
+    </context-param>
     <servlet-mapping>
         <servlet-name>VisitCounter</servlet-name>
         <url-pattern>/Visit</url-pattern>
@@ -27,4 +35,9 @@
         <servlet-name>SimpleReqDispatcher</servlet-name>
         <url-pattern>/SimpleReqDispatcher</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletConfigContext</servlet-name>
+        <url-pattern>/ServletConfigContext</url-pattern>
+    </servlet-mapping>
+
 </web-app>
