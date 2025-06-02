@@ -3,6 +3,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
     <servlet>
         <servlet-name>VisitCounter</servlet-name>
         <servlet-class>org.example.demo.VisitCounter\</servlet-class>
@@ -19,9 +22,17 @@
         <servlet-name>ServletConfigContext</servlet-name>
         <servlet-class>org.example.demo.ServletConfigAndContext.ServletConfigContext</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>FileUploading</servlet-name>
+        <servlet-class>org.example.demo.FileUploading.FileUploading</servlet-class>
+    </servlet>
     <context-param>
         <param-name>adminEmail</param-name>
         <param-value>alimosaad@gmail.com</param-value>
+    </context-param>
+    <context-param>
+        <param-name>tempfile.dir</param-name>
+        <param-value>tmpfiles</param-value>
     </context-param>
     <servlet-mapping>
         <servlet-name>VisitCounter</servlet-name>
@@ -38,6 +49,10 @@
     <servlet-mapping>
         <servlet-name>ServletConfigContext</servlet-name>
         <url-pattern>/ServletConfigContext</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FileUploading</servlet-name>
+        <url-pattern>/FileUploading</url-pattern>
     </servlet-mapping>
 
 </web-app>

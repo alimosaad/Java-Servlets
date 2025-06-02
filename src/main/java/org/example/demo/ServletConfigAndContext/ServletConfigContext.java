@@ -10,7 +10,6 @@ public class ServletConfigContext extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         PrintWriter out=response.getWriter();
         out.println("<h1>Hello "+getServletContext().getInitParameter("adminEmail")+"</h1>");
-
     }
 
 
