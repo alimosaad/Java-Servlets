@@ -16,7 +16,6 @@
         <maven.compiler.source>23</maven.compiler.source>
         <junit.version>5.11.0</junit.version>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>jakarta.servlet</groupId>
